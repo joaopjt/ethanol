@@ -82,8 +82,51 @@ program.command('parse')
     console.log(`nitrogen: ${flashlight} - ${magnet}`);
     console.log(`oxygen: ${flashlight} - ${magnet} - ${calendar} - ${guitar}`);
     console.log('-----------------------------------------------');
-    
   });
+
+  program.command('co2')
+    .argument('<string>', 'string to get the co2 from')
+    .action((s) => {
+      let result = [];
+
+      let guitar = parser.guitar(s).map((r) => r.wide);
+      let calendar = parser.calendar(s).map((r) => r.wide);
+      let magnet = parser.magnet(s).map((r) => r.wide);
+      let flashlight = parser.flashlight(s).map((r) => r.wide);
+
+      let updateResults = (st) => {
+        guitar = parser.guitar(st)[0].wide;
+        calendar = parser.calendar(st)[0].wide;
+        magnet = parser.magnet(st)[0].wide;
+        flashlight = parser.flashlight(st)[0].wide;
+      }
+
+      let carbon = {
+        _carbon: 1,
+        carbon: parser.tent(s)[0].wide
+      };
+
+      let oxygen = {
+        _oxygen: 1,
+        oxygen: parser.trash_can(s)[0].wide
+      };
+
+      let oxygen_1 = {
+        _oxygen: 1,
+        oxygen: parser[parser_keys[carbon.carbon]](s)[0].wide
+      };
+
+      console.log(carbon);
+      console.log(oxygen);
+      console.log(oxygen_1);
+
+      updateResults(carbon.carbon);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar }`);
+      updateResults(oxygen.oxygen);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
+      updateResults(oxygen_1.oxygen);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
+    });
 
   program.command('diesel')
     .argument('<string>', 'string to get the diesel from')
@@ -535,4 +578,42 @@ program.command('parse')
       updateResults(ch3.hydrogen[2]);
       console.log(`${flashlight}`);
     });
+
+  program.command('no2')
+    .argument('<string>', 'string to get the no2 from')
+    .action((s) => {
+      let result = [];
+
+      let guitar = parser.guitar(s).map((r) => r.wide);
+      let calendar = parser.calendar(s).map((r) => r.wide);
+      let magnet = parser.magnet(s).map((r) => r.wide);
+      let flashlight = parser.flashlight(s).map((r) => r.wide);
+
+      let updateResults = (st) => {
+        guitar = parser.guitar(st)[0].wide;
+        calendar = parser.calendar(st)[0].wide;
+        magnet = parser.magnet(st)[0].wide;
+        flashlight = parser.flashlight(st)[0].wide;
+      }
+
+      let nitrogen = {
+        _nitrogen: 1,
+        nitrogen: parser.placard(s)[0].wide
+      };
+
+      let oxygen = {
+        _oxygen: 1,
+        oxygen: parser[parser_keys[nitrogen.nitrogen]](s)[0].wide
+      };
+
+      console.log(nitrogen);
+      console.log(oxygen);
+
+      updateResults(nitrogen.nitrogen);
+      console.log(`${ flashlight } - ${ magnet }`);
+      updateResults(oxygen.oxygen);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
+    });
+
+  
 program.parse();

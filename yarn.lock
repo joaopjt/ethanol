@@ -2,32 +2,30 @@
 # yarn lockfile v1
 
 
-"bullseye@git+ssh://git@github.com:cangjie-champagne/bullseye#master":
+"bullseye@git+ssh://git@github.com:cott-on-candy/bullseye#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/bullseye.git"
-  integrity sha512-cfS/z/Wje1iuSShDVMbr3ZqKuaMlyLu37sbJi7nMflzXZsRbBmyMt+0AFPHTlOfmKVWVgE8nKdOydR6xrs0/rw==
+  resolved "git+ssh://git@github.com/cott-on-candy/bullseye.git#fc8b5ed52a9dbdd8597ae910f67d05bba2ade82d"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"calendar@git+ssh://git@github.com:cangjie-champagne/calendar#master":
+"calendar@git+ssh://git@github.com:cott-on-candy/calendar#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/calendar.git#47b850849e57527b08bd5bb2551fee8d0ca31f56"
+  resolved "git+ssh://git@github.com/cott-on-candy/calendar.git#8511c31e5fc324d2019153393923dd96725400cd"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"camping@git+ssh://git@github.com:cangjie-champagne/camping#master":
+"camping@git+ssh://git@github.com:cott-on-candy/camping#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/camping.git"
-  integrity sha512-r/UByNdlMnFlXcVvO/9C7XQ2/kGuHoH7XjnJ8pRiXqBF18bG7j1u1gtHiXXWrqdYGVjvZuhmrqoWYstozVL0Wg==
+  resolved "git+ssh://git@github.com/cott-on-candy/camping.git#c04eeedc01358e092ebefbdc7681731ef9059006"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"christmas-tree@git+ssh://git@github.com:cangjie-champagne/christmas-tree#master":
+"christmas-tree@git+ssh://git@github.com:cott-on-candy/christmas-tree#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/christmas-tree.git#ed47b6840afdd7a25beadb3d09ec63b65e28abed"
+  resolved "git+ssh://git@github.com/cott-on-candy/christmas-tree.git#4e43ac08f05df56abbfaed25c956d90fad3ba515"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
@@ -37,112 +35,100 @@ commander@^11.0.0:
   resolved "https://registry.npmjs.org/commander/-/commander-11.0.0.tgz"
   integrity sha512-9HMlXtt/BNoYr8ooyjjNRdIilOTkVJXB+GhxMTtOKwk0R4j4lS4NpjuqmRxroBfnfTSHQIHQB7wryHhXarNjmQ==
 
-"compass@git+ssh://git@github.com:cangjie-champagne/compass#master":
+"compass@git+ssh://git@github.com:cott-on-candy/compass#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/compass.git"
-  integrity sha512-yJLtcZEJMPKFW0pwD4qlIWi0DIvtqD0NOyIQWOpLkrhylPT+7ztCUpdqr5HnvIt5XueoSDrQClJHPgoMAKGJeQ==
+  resolved "git+ssh://git@github.com/cott-on-candy/compass.git#23f5f7e33fe9817291c1be8f92469837576ebf88"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"eagle@git+ssh://git@github.com:cangjie-champagne/eagle#master":
+"eagle@git+ssh://git@github.com:cott-on-candy/eagle#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/eagle.git"
-  integrity sha512-CVClRHf2bq3rwm8E20IuMVOyJC3h1ke4Q84cKDN95uV/2CC9w4V7DKMLO6Q+8nLTm5OySvND1uTZ28kOMwvwmg==
+  resolved "git+ssh://git@github.com/cott-on-candy/eagle.git#33031c3e722728aa7f9cf96386a8d06d976fc0ac"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"fire-extinguisher@git+ssh://git@github.com:cangjie-champagne/fire-extinguisher#master":
+"fire-extinguisher@git+ssh://git@github.com:cott-on-candy/fire-extinguisher#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/fire-extinguisher.git"
-  integrity sha512-Yoc+9KRM2K86prVa3rEF9Lg5bAWpk1iVH3xa7HDG2aAf3vP3dfUh4FO9RwZ8Mio5nUip/DF9EXxB+ZIqzHQ1Tw==
+  resolved "git+ssh://git@github.com/cott-on-candy/fire-extinguisher.git#52cf572c839a2266fb3e9ddc250740a987abafc8"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"flashlight@git+ssh://git@github.com:cangjie-champagne/flashlight#master":
+"flashlight@git+ssh://git@github.com:cott-on-candy/flashlight#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/flashlight.git"
-  integrity sha512-8oWWkvSJzG96qzOF/jlXodtlsCQCO7ppdDxulewLnRN+9jnkkNBnxbNDpich+zdFBwUH0NgZO5xjZCJZJLHZfA==
+  resolved "git+ssh://git@github.com/cott-on-candy/flashlight.git#28d0c25991e2e4ab7386528ff07780ec2265c66c"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"gas-station@git+ssh://git@github.com:cangjie-champagne/gas-station#master":
+"gas-station@git+ssh://git@github.com:cott-on-candy/gas-station#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/gas-station.git"
-  integrity sha512-YQS/+lJo+RIQ0H27c4QfnBw3Qk0F0t2DelOdj7JgepXx0V2xF5uROMOqB4b1/UNJNmFqeqcknxjOvBnCbfbpYQ==
+  resolved "git+ssh://git@github.com/cott-on-candy/gas-station.git#cf955f4226bb3aa36708713a261af10cfb3e936c"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"guitar@git+ssh://git@github.com:cangjie-champagne/guitar#master":
+"guitar@git+ssh://git@github.com:cott-on-candy/guitar#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/guitar.git#972577fef526c47a99eff827f276ea5301e29d1b"
+  resolved "git+ssh://git@github.com/cott-on-candy/guitar.git#8d0aa165bd2e519f71cd165120fba3bde2d0fd84"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"joystick@git+ssh://git@github.com:cangjie-champagne/joystick#master":
+"joystick@git+ssh://git@github.com:cott-on-candy/joystick#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/joystick.git"
-  integrity sha512-YxfbOF/O984B8Wew0848+pQMpNsYNnjt5pMGg5JBHEUy49LgvpC8iLhQezhnk6vldVlwiu7YE3aR+CcjvQ42gw==
+  resolved "git+ssh://git@github.com/cott-on-candy/joystick.git#01b92f770ed0d974eb755df9fb2ba933fed98711"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"magnet@git+ssh://git@github.com:cangjie-champagne/magnet#master":
+"magnet@git+ssh://git@github.com:cott-on-candy/magnet#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/magnet.git"
-  integrity sha512-iICS6IyStWrXTruVQjtpugE+0irwPLrfI7gFvwIoOuXOoxqjWWQoTsgdyBnGB8bmtvz8Q89KCQKF3oediXg6xw==
+  resolved "git+ssh://git@github.com/cott-on-candy/magnet.git#6867b388bb354922b40b6f050bbb77e9f39b9f0b"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"pepper-spray@git+ssh://git@github.com:cangjie-champagne/pepper-spray#master":
+"pepper-spray@git+ssh://git@github.com:cott-on-candy/pepper-spray#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/pepper-spray.git"
-  integrity sha512-Ghm8tq+kzgaqurSp39EHiELGzsxZvbbQTLIMGbdeBotvYEMA3xa5owSEZEBKnaPRq10m+pCbVzOpKY5O2akcJQ==
+  resolved "git+ssh://git@github.com/cott-on-candy/pepper-spray.git#05190c952057f040397e34810d8b99fff9b0696d"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"placard@git+ssh://git@github.com:cangjie-champagne/placard#master":
+"placard@git+ssh://git@github.com:cott-on-candy/placard#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/placard.git"
-  integrity sha512-7RCPt+GaVlB1x9swg/hW18RQG8QShIJQQTgxnSQ/4oLCRI8hWUc+1A5h5janBLCN6wAmPtt0rg+E2oRpsEtstA==
+  resolved "git+ssh://git@github.com/cott-on-candy/placard.git#6fbc5dbe26aa06ce93bb241a2652f43ec6ff3e00"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"snowflake@git+ssh://git@github.com:cangjie-champagne/snowflake#master":
+"snowflake@git+ssh://git@github.com:cott-on-candy/snowflake#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/snowflake.git"
-  integrity sha512-QmP8QBdvnkq2Vx5vz/595vQgcD3rE7+V9G6xioOSWKnmVh9Hl5hp9Tr97tu/25HDUpvOH2H60z04Q0HkeTJeiw==
+  resolved "git+ssh://git@github.com/cott-on-candy/snowflake.git#3eb9ca6078d505dfccb42ff1f783ce97a1040ed8"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"sunflower@git+ssh://git@github.com:cangjie-champagne/sunflower#master":
+"sunflower@git+ssh://git@github.com:cott-on-candy/sunflower#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/sunflower.git"
-  integrity sha512-hX8i2NXR5lytrEr0GTx6ZYHXxALZJ/vVW6MoOTsm7aRrz7/8fU2b1PLfmUYkBRwzgf1nXklnDO4z1kEmXSXmBg==
+  resolved "git+ssh://git@github.com/cott-on-candy/sunflower.git#5f9df0815c77ef86324273d2946cdf2cc5d3a895"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"sunglasses@git+ssh://git@github.com:cangjie-champagne/sunglasses#master":
+"sunglasses@git+ssh://git@github.com:cott-on-candy/sunglasses#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/sunglasses.git#666a9de099ae6d6565392f596148f70a2c576051"
+  resolved "git+ssh://git@github.com/cott-on-candy/sunglasses.git#07a3de768bf674d6b1525e29c03dfae916d9125a"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"taxi-cab@git+ssh://git@github.com:cangjie-champagne/taxi-cab#master":
+"taxi-cab@git+ssh://git@github.com:cott-on-candy/taxi-cab#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/taxi-cab.git"
-  integrity sha512-PBXsugEQ1GKtlH3FTMEh6mpix815vjTinW0e3UMZ44Zrmy+n9zjN1kwbMw4kvgKrc8ZF5XvtlEDRRMi0XJ2HHA==
+  resolved "git+ssh://git@github.com/cott-on-candy/taxi-cab.git#73724c66eacd2840b4dd00b3a76c698e451d48fe"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
@@ -152,57 +138,51 @@ commander@^11.0.0:
   resolved "git+ssh://git@github.com/cangjie-champagne/telephone-booth.git"
   integrity sha512-YuH4Cs73HYgSt2/g4ZQynZBnqnCo0gG7Bz0wnfvItXttcQ0vlHyPmNYbva7AMMDMkbFzxX8mqmmKZjCpYJd7Rg==
 
-"telephone@git+ssh://git@github.com:cangjie-champagne/telephone#master":
+"telephone@git+ssh://git@github.com:cott-on-candy/telephone#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/telephone.git"
-  integrity sha512-1o/n/MFsFfTYKo0o5JW7d5xe0sm9+HMeANIP0MD7x1HR4hp6CUa/48f61wZlyCAN9kGPfv2ZU3Lkc56ZQgU28w==
+  resolved "git+ssh://git@github.com/cott-on-candy/telephone.git#cfded391e4aab27a327d26b854d479b64a03b278"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"tennis@git+ssh://git@github.com:cangjie-champagne/tennis#master":
+"tennis@git+ssh://git@github.com:cott-on-candy/tennis#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/tennis.git"
-  integrity sha512-Lizo0865Dpq+0eQwP/M1kCtaoSAqJfFnhkuAyxONl82CQJia2wdBysmx4zjoaUlRcqF8cVEnC9Leiha5BywRbQ==
+  resolved "git+ssh://git@github.com/cott-on-candy/tennis.git#e054cac9284cf13cc425eaabf59e0d1c87300b8b"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"tent@git+ssh://git@github.com:cangjie-champagne/tent#master":
+"tent@git+ssh://git@github.com:cott-on-candy/tent#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/tent.git"
-  integrity sha512-4O6L6mReWghx6awsPNoNFh60aLdo5V4oHXTo7uNrwgXzfEyY//dreKxkUn4C1bGsY9xQCYEUawOmcNZXL/SxWA==
+  resolved "git+ssh://git@github.com/cott-on-candy/tent.git#3a6dd921aeda5eb0f3340a912877a6f36f3c6bb8"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"toolbox@git+ssh://git@github.com:cangjie-champagne/toolbox#master":
+"toolbox@git+ssh://git@github.com:cott-on-candy/toolbox#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/toolbox.git#1e7e9fe2fab7ede99f77c4492c067043bb3d4110"
+  resolved "git+ssh://git@github.com/cott-on-candy/toolbox.git#22837d89dcae64e319734bb33e07056357da92db"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"trash-can@git+ssh://git@github.com:cangjie-champagne/trash-can#master":
+"trash-can@git+ssh://git@github.com:cott-on-candy/trash-can#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/trash-can.git"
-  integrity sha512-t/kgsx2yz7JFy1D/Op0YCXxb5dWUjzyyB4Loagzd/Bi6UE9YVVMFM4rip2iEIk/AyyKn8xz8/VxGkLvcW98Yyw==
+  resolved "git+ssh://git@github.com/cott-on-candy/trash-can.git#76c0e74ebf022e8232bd3c7dfc663788064d1343"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"umbrella@git+ssh://git@github.com:cangjie-champagne/umbrella#master":
+"umbrella@git+ssh://git@github.com:cott-on-candy/umbrella#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/umbrella.git"
-  integrity sha512-qVPuWnYju6tmxsA2RiB2bvOGTmwWhR5SF3PYMkBmU1I15fOQ83DVtaPuvwCYUgaeg5b3SIY6XOA5ppXgeTt4fg==
+  resolved "git+ssh://git@github.com/cott-on-candy/umbrella.git#0b6fb6f3b0db7c2a1486f3122d21e5afee7ecf43"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"
 
-"watch@git+ssh://git@github.com:cangjie-champagne/watch#master":
+"watch@git+ssh://git@github.com:cott-on-candy/watch#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/cangjie-champagne/watch.git"
-  integrity sha512-MPFWrJo1OnKf/DjTcCTEHgMNSA0IGylwUraulqDklZQ2oSsBONaDDoyjGrYiLFxNE25Au0NOTBVXrBwCafXshg==
+  resolved "git+ssh://git@github.com/cott-on-candy/watch.git#5373d16f28c3e5f203b98bb2304b9ff348d046cf"
   dependencies:
     commander "^11.0.0"
     telephone-booth "git+ssh://git@github.com:cangjie-champagne/telephone-booth#master"

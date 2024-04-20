@@ -391,6 +391,75 @@ program.command('parse')
       console.log(`${ flashlight }`);
       updateResults(keys[oxygen.oxygen]);
       console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
+      updateResults(keys[oxygen_hydrogen.hydrogen]);
+      console.log(`${ flashlight }`);
+    });
+
+    program.command('paper')
+    .argument('<string>', 'string to get information from')
+    .action((s) => {
+      let result = [];
+      let carbon = parser.tent(s)[0].wide;
+
+      let guitar = parser.guitar(s).map((r) => r.wide);
+      let calendar = parser.calendar(s).map((r) => r.wide);
+      let magnet = parser.magnet(s).map((r) => r.wide);
+      let flashlight = parser.flashlight(s).map((r) => r.wide);
+
+      let updateResults = (st) => {
+        guitar = parser.guitar(st)[0].wide;
+        calendar = parser.calendar(st)[0].wide;
+        magnet = parser.magnet(st)[0].wide;
+        flashlight = parser.flashlight(st)[0].wide;
+      }
+
+      carbon = {
+        _carbon: 2,
+        carbon: [carbon, parser[parser_keys[carbon]](s)[0].wide]
+      }
+
+      let hydrogen = {
+        _hydrogen: 5,
+        hydrogen: [parser.sunglasses(s)[0].wide]
+      };
+
+      for (let i = 1; i <= 4; i++) {
+        hydrogen.hydrogen.push(parser[parser_keys[hydrogen.hydrogen[hydrogen.hydrogen.length - 1]]](s)[0].wide);
+      }
+
+      let oxygen = {
+        _oxygen: 1,
+        oxygen: parser.trash_can(s)[0].wide
+      };
+
+      let oxygen_hydrogen = {
+        _hydrogen: 1,
+        hydrogen: parser.sunglasses(s)[0].wide
+      };
+
+      console.log(carbon);
+      console.log(hydrogen);
+      console.log(oxygen);
+      console.log(oxygen_hydrogen);
+      console.log(' ');
+      updateResults(keys[carbon.carbon[0]]);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar }`);
+      updateResults(keys[carbon.carbon[1]]);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar }`);
+      updateResults(keys[hydrogen.hydrogen[0]]);
+      console.log(`${ flashlight }`);
+      updateResults(keys[hydrogen.hydrogen[1]]);
+      console.log(`${ flashlight }`);
+      updateResults(keys[hydrogen.hydrogen[2]]);
+      console.log(`${ flashlight }`);
+      updateResults(keys[hydrogen.hydrogen[3]]);
+      console.log(`${ flashlight }`);
+      updateResults(keys[hydrogen.hydrogen[4]]);
+      console.log(`${ flashlight }`);
+      updateResults(keys[oxygen.oxygen]);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
+      updateResults(keys[oxygen_hydrogen.hydrogen]);
+      console.log(`${ flashlight }`);
     });
 
   program.command('nicotine')

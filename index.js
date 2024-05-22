@@ -395,71 +395,128 @@ program.command('parse')
       console.log(`${ flashlight }`);
     });
 
-    program.command('paper')
+    program.command('fire-extinguisher') // H2SO4 NaHCO3
     .argument('<string>', 'string to get information from')
     .action((s) => {
       let result = [];
-      let carbon = parser.tent(s)[0].wide;
 
+      let toolbox = parser.toolbox(s).map((r) => r.wide);
       let guitar = parser.guitar(s).map((r) => r.wide);
       let calendar = parser.calendar(s).map((r) => r.wide);
       let magnet = parser.magnet(s).map((r) => r.wide);
       let flashlight = parser.flashlight(s).map((r) => r.wide);
+      let gas_station = parser.gas_station(s).map((r) => r.wide);
 
       let updateResults = (st) => {
+        toolbox = parser.toolbox(st)[0].wide;
         guitar = parser.guitar(st)[0].wide;
         calendar = parser.calendar(st)[0].wide;
         magnet = parser.magnet(st)[0].wide;
         flashlight = parser.flashlight(st)[0].wide;
-      }
-
-      carbon = {
-        _carbon: 2,
-        carbon: [carbon, parser[parser_keys[carbon]](s)[0].wide]
+        gas_station = parser.gas_station(st)[0].wide;
       }
 
       let hydrogen = {
-        _hydrogen: 5,
+        _hydrogen: 2,
         hydrogen: [parser.sunglasses(s)[0].wide]
       };
 
-      for (let i = 1; i <= 4; i++) {
+      for (let i = 1; i <= 1; i++) {
         hydrogen.hydrogen.push(parser[parser_keys[hydrogen.hydrogen[hydrogen.hydrogen.length - 1]]](s)[0].wide);
       }
 
-      let oxygen = {
-        _oxygen: 1,
-        oxygen: parser.trash_can(s)[0].wide
+      let sulfur = {
+        _sulfur: 1,
+        sulfur: parser.telephone(s)[0].wide
       };
 
-      let oxygen_hydrogen = {
+      let oxygen = {
+        _oxygen: 4,
+        oxygen: [parser.trash_can(s)[0].wide]
+      };
+
+      for (let i = 1; i <= 3; i++) {
+        oxygen.oxygen.push(parser[parser_keys[oxygen.oxygen[oxygen.oxygen.length - 1]]](s)[0].wide);
+      }
+
+
+      console.log(hydrogen);
+      console.log(sulfur);
+      console.log(oxygen);
+      
+      console.log(' ');
+      updateResults(keys[hydrogen.hydrogen[0]]);
+      console.log(`${ flashlight }`);
+
+      updateResults(keys[hydrogen.hydrogen[1]]);
+      console.log(`${ flashlight }`);
+
+      updateResults(keys[sulfur.sulfur]);
+      console.log(`${ gas_station }`);
+
+      updateResults(keys[oxygen.oxygen[0]]);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
+
+      updateResults(keys[oxygen.oxygen[1]]);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
+
+      updateResults(keys[oxygen.oxygen[2]]);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
+
+      updateResults(keys[oxygen.oxygen[3]]);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
+
+      console.log(' ');
+      console.log('-');
+      console.log(' ');
+
+      let sodium = {
+        _sodium: 1,
+        sodium: parser.joystick(s)[0].wide
+      };
+
+      let sodium_hydrogen = {
         _hydrogen: 1,
         hydrogen: parser.sunglasses(s)[0].wide
       };
 
+      let carbon = {
+        _carbon: 1,
+        carbon: parser.tent(s)[0].wide
+      };
+
+      let carbon_oxygen = {
+        _oxygen: 3,
+        oxygen: [parser.trash_can(s)[0].wide]
+      };
+
+      for (let i = 1; i <= 2; i++) {
+        carbon_oxygen.oxygen.push(parser[parser_keys[carbon_oxygen.oxygen[carbon_oxygen.oxygen.length - 1]]](s)[0].wide);
+      }
+
+      console.log(sodium);
+      console.log(sodium_hydrogen);
       console.log(carbon);
-      console.log(hydrogen);
-      console.log(oxygen);
-      console.log(oxygen_hydrogen);
+      console.log(carbon_oxygen);
+      
       console.log(' ');
-      updateResults(keys[carbon.carbon[0]]);
+      updateResults(keys[sodium.sodium]);
+      console.log(`${ toolbox }`);
+
+      updateResults(keys[sodium_hydrogen.hydrogen]);
+      console.log(`${ flashlight }`);
+
+      updateResults(keys[carbon.carbon]);
       console.log(`${ flashlight } - ${ magnet } - ${ calendar }`);
-      updateResults(keys[carbon.carbon[1]]);
-      console.log(`${ flashlight } - ${ magnet } - ${ calendar }`);
-      updateResults(keys[hydrogen.hydrogen[0]]);
-      console.log(`${ flashlight }`);
-      updateResults(keys[hydrogen.hydrogen[1]]);
-      console.log(`${ flashlight }`);
-      updateResults(keys[hydrogen.hydrogen[2]]);
-      console.log(`${ flashlight }`);
-      updateResults(keys[hydrogen.hydrogen[3]]);
-      console.log(`${ flashlight }`);
-      updateResults(keys[hydrogen.hydrogen[4]]);
-      console.log(`${ flashlight }`);
-      updateResults(keys[oxygen.oxygen]);
+
+      updateResults(keys[oxygen.oxygen[0]]);
       console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
-      updateResults(keys[oxygen_hydrogen.hydrogen]);
-      console.log(`${ flashlight }`);
+
+      updateResults(keys[oxygen.oxygen[1]]);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
+
+      updateResults(keys[oxygen.oxygen[2]]);
+      console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
     });
 
   program.command('nicotine')

@@ -1,3 +1,3 @@
-# paper
+# ethanol
 
 lick it good!

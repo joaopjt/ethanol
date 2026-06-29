@@ -84,6 +84,24 @@ program.command('parse')
     console.log('-----------------------------------------------');
   });
 
+  program.command('pp')
+    .argument('<string>', 'string to get the pp from')
+    .action((s) => {
+      let result = [];
+
+      let guitar = parser.guitar(s).map((r) => r.wide);
+      let calendar = parser.calendar(s).map((r) => r.wide);
+      let magnet = parser.magnet(s).map((r) => r.wide);
+      let flashlight = parser.flashlight(s).map((r) => r.wide);
+
+      let updateResults = (st) => {
+        guitar = parser.guitar(st)[0].wide;
+        calendar = parser.calendar(st)[0].wide;
+        magnet = parser.magnet(st)[0].wide;
+        flashlight = parser.flashlight(st)[0].wide;
+      }
+    });
+
   program.command('co2')
     .argument('<string>', 'string to get the co2 from')
     .action((s) => {
@@ -741,5 +759,176 @@ program.command('parse')
       console.log(`${ flashlight } - ${ magnet } - ${ calendar } - ${ guitar }`);
     });
 
+  program.command('kerosene')
+    .argument('<string>', 'string to get the kerosene from')
+    .action((s) => {
+      let result = [];
+
+      let guitar = parser.guitar(s).map((r) => r.wide);
+      let calendar = parser.calendar(s).map((r) => r.wide);
+      let magnet = parser.magnet(s).map((r) => r.wide);
+      let flashlight = parser.flashlight(s).map((r) => r.wide);
+
+      let updateResults = (st) => {
+        guitar = parser.guitar(st)[0].wide;
+        calendar = parser.calendar(st)[0].wide;
+        magnet = parser.magnet(st)[0].wide;
+        flashlight = parser.flashlight(st)[0].wide;
+      }
+
+      let carbon = {
+        _carbon: 12,
+        carbon: [parser.tent(s)[0].wide]
+      }
+
+      for (let i = 1; i <= 11; i++) {
+        carbon.carbon.push(parser[parser_keys[carbon.carbon[carbon.carbon.length - 1]]](s)[0].wide);
+      }
+
+      let hydrogen = {
+        _hydrogen: 26,
+        hydrogen: [parser.sunglasses(s)[0].wide]
+      };
+
+      for (let i = 1; i <= 25; i++) {
+        hydrogen.hydrogen.push(parser[parser_keys[hydrogen.hydrogen[hydrogen.hydrogen.length - 1]]](s)[0].wide);
+      }
+
+      console.log(carbon);
+      console.log(hydrogen);
+      console.log('----');
+
+      carbon = {
+        _carbon: 16,
+        carbon: [parser.tent(s)[0].wide]
+      }
+
+      for (let i = 1; i <= 15; i++) {
+        carbon.carbon.push(parser[parser_keys[carbon.carbon[carbon.carbon.length - 1]]](s)[0].wide);
+      }
+
+      hydrogen = {
+        _hydrogen: 32,
+        hydrogen: [parser.sunglasses(s)[0].wide]
+      };
+
+      for (let i = 1; i <= 31; i++) {
+        hydrogen.hydrogen.push(parser[parser_keys[hydrogen.hydrogen[hydrogen.hydrogen.length - 1]]](s)[0].wide);
+      }
+
+      console.log(carbon);
+      console.log(hydrogen);
+      console.log('----');
+
+      carbon = {
+        _carbon: 14,
+        carbon: [parser.tent(s)[0].wide]
+      }
+
+      for (let i = 1; i <= 13; i++) {
+        carbon.carbon.push(parser[parser_keys[carbon.carbon[carbon.carbon.length - 1]]](s)[0].wide);
+      }
+
+      hydrogen = {
+        _hydrogen: 30,
+        hydrogen: [parser.sunglasses(s)[0].wide]
+      };
+
+      for (let i = 1; i <= 29; i++) {
+        hydrogen.hydrogen.push(parser[parser_keys[hydrogen.hydrogen[hydrogen.hydrogen.length - 1]]](s)[0].wide);
+      }
+
+      console.log(carbon);
+      console.log(hydrogen);
+      console.log('----');
+
+      carbon = {
+        _carbon: 12,
+        carbon: [parser.tent(s)[0].wide]
+      }
+
+      for (let i = 1; i <= 11; i++) {
+        carbon.carbon.push(parser[parser_keys[carbon.carbon[carbon.carbon.length - 1]]](s)[0].wide);
+      }
+
+      hydrogen = {
+        _hydrogen: 24,
+        hydrogen: [parser.sunglasses(s)[0].wide]
+      };
+
+      for (let i = 1; i <= 23; i++) {
+        hydrogen.hydrogen.push(parser[parser_keys[hydrogen.hydrogen[hydrogen.hydrogen.length - 1]]](s)[0].wide);
+      }
+
+      console.log(carbon);
+      console.log(hydrogen);
+      console.log('----');
+
+      carbon = {
+        _carbon: 10,
+        carbon: [parser.tent(s)[0].wide]
+      }
+
+      for (let i = 1; i <= 9; i++) {
+        carbon.carbon.push(parser[parser_keys[carbon.carbon[carbon.carbon.length - 1]]](s)[0].wide);
+      }
+
+      hydrogen = {
+        _hydrogen: 22,
+        hydrogen: [parser.sunglasses(s)[0].wide]
+      };
+
+      for (let i = 1; i <= 21; i++) {
+        hydrogen.hydrogen.push(parser[parser_keys[hydrogen.hydrogen[hydrogen.hydrogen.length - 1]]](s)[0].wide);
+      }
+
+      console.log(carbon);
+      console.log(hydrogen);
+      console.log('----');
+
+      carbon = {
+        _carbon: 16,
+        carbon: [parser.tent(s)[0].wide]
+      }
+
+      for (let i = 1; i <= 15; i++) {
+        carbon.carbon.push(parser[parser_keys[carbon.carbon[carbon.carbon.length - 1]]](s)[0].wide);
+      }
+
+      hydrogen = {
+        _hydrogen: 34,
+        hydrogen: [parser.sunglasses(s)[0].wide]
+      };
+
+      for (let i = 1; i <= 33; i++) {
+        hydrogen.hydrogen.push(parser[parser_keys[hydrogen.hydrogen[hydrogen.hydrogen.length - 1]]](s)[0].wide);
+      }
+
+      console.log(carbon);
+      console.log(hydrogen);
+      console.log('----');
+
+      carbon = {
+        _carbon: 10,
+        carbon: [parser.tent(s)[0].wide]
+      }
+
+      for (let i = 1; i <= 9; i++) {
+        carbon.carbon.push(parser[parser_keys[carbon.carbon[carbon.carbon.length - 1]]](s)[0].wide);
+      }
+
+      hydrogen = {
+        _hydrogen: 20,
+        hydrogen: [parser.sunglasses(s)[0].wide]
+      };
+
+      for (let i = 1; i <= 19; i++) {
+        hydrogen.hydrogen.push(parser[parser_keys[hydrogen.hydrogen[hydrogen.hydrogen.length - 1]]](s)[0].wide);
+      }
+
+      console.log(carbon);
+      console.log(hydrogen);
+      console.log('----');
+    });
   
 program.parse();
